@@ -1,0 +1,43 @@
+<resources>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>   
+
+
+
+
+        <!-- Example settings for Datos -->    
+    <string name="pref_header_datos">Uso de Datos</string>
+    <string name="pref_title_ndescargarImagenes">Descargar imagenes</string>        
+    <string name="pref_title_grandes">Calidad de imagen grande</string>
+    <string name="pref_title_permitir_bloquear">Permitir bloquear asientos</string>
+    <string name="pref_sum_permitir_bloquear">Permite acceder a la pantalla de bloquear asientos</string>
+    
+    
+     <string-array name="pref_calidad_imagenes_grande_titles">
+       <!--  <item>Grande</item>  -->         
+        <item>Normal</item>
+        <item>Pequeña</item>
+        <item>No descargar</item>  
+    </string-array>
+    
+      <string-array name="pref_calidad_imagenes_grande_values">
+       <!-- <item>3</item>  -->          
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>  
+    </string-array>
+    
+    <string name="pref_title_ndescargarTrailer">Descargar trailer</string>
+    <string name="pref_sum_ndescargarTrailer">Ocupan bastante</string>
+    
+    <string name="pref_title_imagen_expandible">Imagen expandible HD</string>
+    <string name="pref_sum_imagen_expandible">Descargar la imagen expandible en HD</string>
+    
+    
+</resources>

@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"   
+    tools:context="cinesavip.SeleccionActivity$PlaceholderFragment"
+    android:background="#F8F8F8"
+     >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        android:layout_alignParentTop="true"  
+        android:layout_marginBottom="10dp"              
+        >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/blanco_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"  
+            android:layout_margin="0dp"	
+                       
+            android:background="@drawable/menu"
+            android:text="Selecciona tu ciudad"            
+            android:textSize="@dimen/normal" />
+
+            <ScrollView
+                android:id="@+id/scrollViewSel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fillViewport="true"
+                android:layout_marginTop="3dp" 
+                android:layout_marginBottom="10dp"    
+                android:layout_marginLeft="3dp"                
+                android:layout_marginRight="3dp"               
+                            
+                android:background="@drawable/scroll" >
+ 
+                <LinearLayout
+                    android:id="@+id/ciudadesLayer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"                    
+                    android:orientation="horizontal" >
+
+                    <ProgressBar
+                        android:id="@+id/progressBarSel"
+                        style="?android:attr/progressBarStyleLarge"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+						android:gravity = "center_vertical|center_horizontal"
+                        />
+                    
+                    <RadioGroup
+                        android:id="@+id/groupRadioButtons"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                      
+                    </RadioGroup>
+
+                   
+
+                </LinearLayout>
+            </ScrollView>
+            
+ 			<Button
+ 			    android:id="@+id/selCiudad"
+ 			    style="@style/button_text"
+ 			    android:layout_width="wrap_content"
+ 			    android:layout_height="wrap_content"
+ 			    android:layout_gravity="center_horizontal|clip_horizontal"
+ 			    android:background="@drawable/boton"
+ 			    android:onClick="onClickAceptar"
+ 			    android:text="Aceptar" />
+
+    </LinearLayout>
+
+</RelativeLayout>

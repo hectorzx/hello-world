@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    tools:context="cinesavip.MainActivity$PlaceholderFragment" >
+    
+   
+	<LinearLayout
+	   android:layout_width="wrap_content"
+	   android:layout_height="wrap_content" 
+	   android:orientation="vertical">
+		<RelativeLayout
+		   android:layout_width="wrap_content"
+		   android:layout_height="wrap_content" >
+		 
+					   
+			
+			
+					 
+			
+
+	   	 </RelativeLayout>
+	   	 
+		<RelativeLayout
+		   android:layout_width="match_parent"
+		   android:layout_height="wrap_content" >
+		 
+		  			<LinearLayout
+		  			    android:id="@+id/layoutCargarSala"		  			    
+					   android:layout_width="match_parent"
+					   android:layout_height="wrap_content" 
+					   android:orientation="vertical"	 
+	            	android:gravity="center_horizontal"> 
+	            	
+					        <ProgressBar
+					            android:id="@+id/progressBarCargarSala"
+					            style="?android:attr/progressBarStyleLarge"
+					            android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:minHeight="150dip"
+					            android:minWidth="150dip" 
+						    android:gravity="center_horizontal"
+					            />
+					        
+					        <TextView
+					            android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+						        android:background="#00000000" 
+						        android:text= "Cargando..."	
+						    android:gravity="center_horizontal"
+						        		        
+						         />
+		        
+		        </LinearLayout>
+		   </RelativeLayout>     
+   		 <RelativeLayout
+		   android:layout_width="wrap_content"
+		   android:layout_height="wrap_content"
+		   android:layout_marginBottom="5dp"		   
+		    >
+
+   		     <ScrollView
+   		         android:id="@+id/scrollViewSala"
+   		         android:layout_width="match_parent"
+   		         android:layout_height="wrap_content" >
+   		         
+   		         <LinearLayout
+   		             android:layout_width="match_parent"
+   		             android:layout_height="match_parent"
+   		             android:orientation="vertical" >
+   		             <TextView
+				    android:id="@+id/textViewSelAsi"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:gravity="center_horizontal"
+				    android:text="@string/selAsientos"
+				    style="@style/blanco_text"
+				    android:background="@drawable/menu"	
+				    android:layout_margin="0dp"		
+				    android:visibility="invisible"	    		    
+				     />
+   		             
+		   		             <TableLayout
+				        android:id="@+id/tl"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_alignParentLeft="true"
+				        android:layout_marginBottom="0dp"
+				        android:layout_marginLeft="0dp"
+				        android:layout_marginRight="0dp"
+				        android:layout_marginTop="5dp"
+				         >
+				        
+				        
+				
+				    </TableLayout>
+				    <RelativeLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" >
+
+		        <LinearLayout
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:gravity="center_horizontal"
+		            android:paddingTop="10dp"
+		            android:orientation="vertical" >
+
+		            <Button
+		                android:id="@+id/buttonBloquear"
+		                style="@style/button_text"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:background="@drawable/boton"
+		                android:enabled="false"
+		                android:onClick="onClickBloquear"
+		                android:text="Bloquear" />
+
+		            <TextView
+		                android:id="@+id/textViewAtencion"
+		                style="@style/texto_atencion"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginTop="10dp"
+		                android:text="@string/atencion"
+		                android:visibility="gone" />
+
+		        </LinearLayout>
+
+		    </RelativeLayout>
+   		             
+   		         </LinearLayout>
+   		     </ScrollView>
+
+		    
+
+		    
+
+	    </RelativeLayout>
+	         
+	</LinearLayout>
+
+	
+
+</RelativeLayout>

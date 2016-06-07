@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Cinesa Vip</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_cines">Cinesa Vip</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="title_activity_seleccion">Cinesa Vip</string>
+    <string name="a_coruna">A Coruña</string>
+    <string name="barcelona">Barcelona</string>
+    <string name="bilbao">Bilbao</string>
+    <string name="castellon">Castellon</string>
+    <string name="guipuzcua">Guipuzcua</string>
+    <string name="las_palmas">Las Palmas</string>
+    <string name="madrid">Madrid</string>
+    <string name="malaga">Malaga</string>
+    <string name="mallorca">Mallorca</string>
+    <string name="merida">Merida</string>
+    <string name="murcia">Murcia</string>
+    <string name="oviedo">Oviedo</string>
+    <string name="santander">Santander</string>
+    <string name="santiago_de_c">Santiago De C.</string>
+    <string name="sevilla">Sevilla</string>
+    <string name="valencia">Valencia</string>
+    <string name="valladolid">Valladolid</string>
+    <string name="zaragoza">Zaragoza</string>
+    <string name="c0">Nueva Condomina</string>
+    <string name="title_activity_pelicula">Pelicula</string>
+    <string name="director"><b>Director:</b></string>
+    <string name="actores"><b>Actores:</b></string>
+    <string name="genero"><b>Género:</b></string>
+    <string name="duracion"><b>Duración:</b></string>
+    <string name="horarios"><b>Horarios</b></string>
+    <string name="selAsientos"><b>Selecciona los asientos</b></string>
+    <string name="atencion"><b><b>*</b> Los asientos están bloqueados, no cierre la apliación ni vuelva hacia atrás o se desbloquearan. Sin embargo puede minimizar la aplicación y dejarla en segundo plano.</b></string>
+    <string name="comprar">Comprar</string>
+    <string name="ayuda">Ayuda</string>
+    <string name="sinopsis"><b>Sinopsis</b></string>
+    <string name="title_activity_video">VideoActivity</string>
+    <string name="trailer">Ver trailer</string>
+    
+        <!--  <string name="banner_ad_unit_id">ca-app-pub-7878061504281764/7768886732</string> -->
+        
+             <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+        
+    
+    
+</resources>

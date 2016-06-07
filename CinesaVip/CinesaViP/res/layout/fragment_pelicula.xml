@@ -1,0 +1,278 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   	android:background="#F8F8F8"
+   
+    tools:context="cinesavip.PeliculaActivity$PlaceholderFragment" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tituloPeli"
+            style="@style/blanco_text"
+            android:background="@drawable/menu"            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_world" 
+            android:layout_margin="0dp"
+            />
+
+        <ScrollView
+            android:id="@+id/scrollPelicula"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent" 
+			        android:orientation="horizontal"
+			        android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"   
+                    android:layout_marginTop="5dp"  
+			        >
+                <RatingBar
+                    android:id="@+id/ratingBar1"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                                                      
+                    />
+                
+          				<TextView
+          				  android:id="@+id/num_valoraciones"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="(1024 valoraciones)" 
+                          style="@style/texto_normal" 
+                          android:layout_marginLeft="10dp"
+              					android:layout_marginRight="10dp" 
+                          />
+                </LinearLayout>
+
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" 
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    
+                    >
+
+                    <ImageView
+                        android:id="@+id/peliculaImg"
+                        android:layout_width="110dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/nodisponible"                         
+                        />
+                    
+                     <LinearLayout
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:orientation="vertical" >
+                
+                          <LinearLayout
+				                android:layout_width="match_parent"
+				                android:layout_height="wrap_content"
+				                android:orientation="horizontal" >
+                
+		                          <TextView
+		                              android:layout_width="wrap_content"
+		                              android:layout_height="wrap_content"
+		                              android:text="@string/director" 
+		                              style="@style/bold" 
+		                              />
+		                          
+		                          <TextView
+		                            android:id="@+id/directoresT"		                              
+						            android:layout_width="wrap_content"
+						            android:layout_height="wrap_content"
+						            />
+                           </LinearLayout>
+                           
+                          
+                             <LinearLayout
+				                android:layout_width="match_parent"
+				                android:layout_height="wrap_content"
+				                android:orientation="horizontal" >
+		                           
+		                           <TextView
+						            android:layout_width="wrap_content"
+						            android:layout_height="wrap_content"
+						            android:text="@string/actores" 
+						            style="@style/bold" 						            
+						            />
+		                             
+		                             <TextView
+		                            android:id="@+id/actoresT"
+						            android:layout_width="wrap_content"
+						            android:layout_height="wrap_content"						            
+						            />
+		                             
+                           </LinearLayout>
+		                           
+		                    <LinearLayout
+				                android:layout_width="match_parent"
+				                android:layout_height="wrap_content"
+				                android:orientation="horizontal" >
+		                            <TextView
+						            android:layout_width="wrap_content"
+						            android:layout_height="wrap_content"
+						            android:text="@string/genero" 
+						            style="@style/bold" 
+						            />
+		                            
+		                             <TextView
+		                            android:id="@+id/generoT"
+						            android:layout_width="wrap_content"
+						            android:layout_height="wrap_content"						            
+						            />
+		                             
+                           </LinearLayout>
+                           
+                           <LinearLayout
+				                android:layout_width="match_parent"
+				                android:layout_height="wrap_content"
+				                android:orientation="horizontal" >
+	                            
+		                            <TextView
+						            android:layout_width="wrap_content"
+						            android:layout_height="wrap_content"
+						            android:text="@string/duracion"
+						            style="@style/bold" 
+						             />
+		                            
+		                             <TextView
+		                            android:id="@+id/duracionT"     
+						            android:layout_width="wrap_content"
+						            android:layout_height="wrap_content"						            					            
+						            />
+		                             
+                           </LinearLayout>
+
+                           <TextView
+                               android:id="@+id/textViewObservaciones"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="*Observaciones" 
+                               android:visibility="gone"
+                               />
+                            
+                     </LinearLayout>
+                         
+                </LinearLayout>
+
+                 <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical" >
+                     
+                     <TextView
+                        android:id="@+id/sinopsis"
+                        style="@style/blanco_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:background="@drawable/submenu"
+                        android:text="@string/sinopsis" /> 
+                        
+                      <TextView
+                        android:id="@+id/sinopsisText"
+                        style="@style/texto_normal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+ 						android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp" 
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Adolfo, un treintañero que trabaja de segurata, está pasando una mala racha. No sólo le deja su novia de toda la vida por ser un tipo sin ambición sino que, para colmo, se convierte en el objetivo de una serie de matones liderados por Vázquez, un peligroso criminal que acaba de escapar de la cárcel. Además descubre que su padre tiene una doble identidad. No es un payés dedicado a la producción de embutidos, como él ha creído toda la vida, sino que es Anacleto, un agente secreto en horas bajas y el hombre que encerró a Vázquez hace treinta años. Adolfo tendrá que abandonar su zona de confort y colaborar con su padre, la persona con la que peor se entiende del mundo, para sobrevivir a la venganza de Vázquez y de paso, entre tiroteos y persecuciones, intentar recuperar a su novia." /> 
+                     
+                     </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/horariosN"
+                        style="@style/blanco_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:background="@drawable/submenu"
+                        android:text="@string/horarios" />
+                  
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClickHorarios"
+                        android:background="@drawable/fondo_fecha"
+                       
+                         >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.9"
+                            android:orientation="vertical"
+                            
+                             >
+
+                            <TextView
+                                android:id="@+id/textView1"
+                                style="@style/texto_azul"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Fecha" />
+
+                            <TextView
+                                android:id="@+id/fechaSel"
+                                style="@style/texto_normal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Hoy" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="0.1"
+                            android:src="@android:drawable/ic_menu_send" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/salasHorariosL"                    
+                     android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical" >
+                   
+
+                </LinearLayout>
+                      
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

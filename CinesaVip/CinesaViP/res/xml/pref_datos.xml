@@ -1,0 +1,28 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--
+         A 'parent' preference, which enables/disables child preferences (below)
+         when checked/unchecked.
+    -->
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="descargar_imagenes"
+        android:title="@string/pref_title_ndescargarImagenes" />
+
+    <ListPreference
+        android:defaultValue="2"
+        android:entries="@array/pref_calidad_imagenes_grande_titles"
+        android:entryValues="@array/pref_calidad_imagenes_grande_values"
+        android:key="calidad_grandes"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_grandes" />  
+        
+  <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="descargar_imagen_expandible"
+        android:title="@string/pref_title_imagen_expandible" 
+        android:summary="@string/pref_sum_imagen_expandible"
+        />
+
+</PreferenceScreen>
